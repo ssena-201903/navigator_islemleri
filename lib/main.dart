@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "redPage" : (context) => RedPage(),
-        "yellowPage" : (context) => YellowPage(),
-        "bluePage" : (context) => BluePage(),
+        "/" : (context) => RedPage(),
+        "/yellowPage" : (context) => YellowPage(),
+        "/bluePage" : (context) => BluePage(),
       },
       theme: ThemeData(
         textTheme: TextTheme(
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         )
       ),
       debugShowCheckedModeBanner: false,
-      home: RedPage(),
+      // home: RedPage(),
     );
   }
 }
