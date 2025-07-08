@@ -29,7 +29,7 @@ class _RedPageState extends State<RedPage> {
               ),
               onPressed: () {
                 // yeni navigator tanımlama
-                Navigator.of(context).pushNamed("/yellowPage");
+                Navigator.of(context).pushNamed("/yellowPage2");
               },
               child: Text("Sarı sayfaya git"),
             ),
