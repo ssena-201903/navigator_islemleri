@@ -8,6 +8,14 @@ class RedPage extends StatefulWidget {
 }
 
 class _RedPageState extends State<RedPage> {
+  late String name;
+
+  @override
+  void initState() {
+    super.initState();
+    name = "Safiye";
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +48,9 @@ class _RedPageState extends State<RedPage> {
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed("/bluePage", arguments: name);
+              },
               child: Text("Mavi sayfaya git"),
             ),
           ],
